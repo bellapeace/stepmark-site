@@ -12,3 +12,12 @@ document.querySelectorAll('.mode-switch').forEach((group) => {
     });
   });
 });
+
+const openLinkedDisclosure = () => {
+  if (!location.hash) return;
+  const target = document.querySelector(location.hash);
+  if (target instanceof HTMLDetailsElement) target.open = true;
+};
+
+window.addEventListener('hashchange', openLinkedDisclosure);
+openLinkedDisclosure();
