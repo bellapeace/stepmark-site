@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZE14VKEYF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LZE14VKEYF', {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
     <meta name="description" content="StepMark turns browser workflows into editable step-by-step guides and optional narrated video tutorials." />
     <meta name="theme-color" content="#2563eb" />
     <meta property="og:title" content="StepMark — Record once. Teach clearly." />
@@ -30,7 +41,7 @@
         <a href="./privacy/">Privacy</a>
         <a href="./zh/" lang="zh-CN">中文</a>
       </nav>
-      <a class="header-action" href="https://chromewebstore.google.com/detail/stepmark/hhkadablolalfnlkilolajdbnkolinci?utm_source=getstepmark.com&utm_medium=website&utm_campaign=official_site&utm_content=header_cta" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+      <a class="header-action" href="https://chromewebstore.google.com/detail/stepmark/hhkadablolalfnlkilolajdbnkolinci?utm_source=getstepmark.com&utm_medium=website&utm_campaign=official_site&utm_content=header_cta" target="_blank" rel="noopener noreferrer" data-analytics-event="chrome_store_click" data-analytics-location="header">Add to Chrome</a>
     </header>
 
     <main>
@@ -41,7 +52,7 @@
           <p class="hero-line">Record once. Teach clearly.</p>
           <p class="hero-description">Turn browser workflows into editable step-by-step guides, reusable documentation materials, and optional narrated video tutorials.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://chromewebstore.google.com/detail/stepmark/hhkadablolalfnlkilolajdbnkolinci?utm_source=getstepmark.com&utm_medium=website&utm_campaign=official_site&utm_content=hero_cta" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+            <a class="button button-primary" href="https://chromewebstore.google.com/detail/stepmark/hhkadablolalfnlkilolajdbnkolinci?utm_source=getstepmark.com&utm_medium=website&utm_campaign=official_site&utm_content=hero_cta" target="_blank" rel="noopener noreferrer" data-analytics-event="chrome_store_click" data-analytics-location="hero">Add to Chrome</a>
             <a class="button button-secondary" href="#workflow">See the workflow</a>
           </div>
           <p class="trust-line">Local by default · No account required · AI optional · <a href="#manual-install">Manual installation</a></p>
@@ -153,7 +164,7 @@
         <p class="eyebrow">READY TO MARK THE NEXT STEP?</p>
         <h2>Create the guide while you do the work.</h2>
         <p>StepMark is available now as a free Chrome extension.</p>
-        <a class="button button-light" href="https://chromewebstore.google.com/detail/stepmark/hhkadablolalfnlkilolajdbnkolinci?utm_source=getstepmark.com&utm_medium=website&utm_campaign=official_site&utm_content=launch_cta" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+        <a class="button button-light" href="https://chromewebstore.google.com/detail/stepmark/hhkadablolalfnlkilolajdbnkolinci?utm_source=getstepmark.com&utm_medium=website&utm_campaign=official_site&utm_content=launch_cta" target="_blank" rel="noopener noreferrer" data-analytics-event="chrome_store_click" data-analytics-location="launch">Add to Chrome</a>
         <details class="manual-install" id="manual-install">
           <summary>Manual installation</summary>
           <div class="manual-install-content">
@@ -166,7 +177,7 @@
             </ol>
             <div class="manual-install-download">
               <div><strong>StepMark 2.1.0</strong><span>ZIP · 505 KB</span></div>
-              <a class="button manual-download-button" href="./downloads/stepmark-2.1.0-chrome.zip" download>Download ZIP</a>
+              <a class="button manual-download-button" href="./downloads/stepmark-2.1.0-chrome.zip" download data-analytics-event="manual_zip_download" data-analytics-location="manual_install">Download ZIP</a>
             </div>
           </div>
         </details>
