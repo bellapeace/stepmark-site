@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZE14VKEYF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LZE14VKEYF', {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
+    <meta name="description" content="StepMark 隐私政策。" />
+    <link rel="canonical" href="https://getstepmark.com/zh/privacy/" />
+    <link rel="alternate" hreflang="en" href="https://getstepmark.com/privacy/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://getstepmark.com/zh/privacy/" />
+    <link rel="icon" href="../../assets/icon-128.png" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <title>隐私政策 — StepMark</title>
+  </head>
+  <body class="legal-page">
+    <header class="site-header"><a class="brand" href="../"><img src="../../assets/icon-128.png" alt="" width="36" height="36" /><span>StepMark</span></a><nav><a href="../">产品</a><a href="../support/">支持</a><a href="../../privacy/" lang="en">English</a></nav><a class="header-action" href="../">首页</a></header>
+    <main class="legal-main">
+      <p class="eyebrow">最后更新：2026 年 8 月 4 日</p>
+      <h1>隐私政策</h1>
+      <p class="lead">StepMark 是一款本地优先的 Chrome 扩展，可将网页操作流程整理成可编辑的图文教程和按需生成的视频教程。本政策说明扩展会处理哪些信息，以及信息可能在何时离开你的浏览器。</p>
+
+      <section><h2>1. StepMark 处理的信息</h2><p>当你主动开始录制时，StepMark 可能处理当前标签页的网址和标题、页面跳转、点击及附近元素上下文、截图，以及按需开启的当前标签页视频。它还会处理教程编辑内容、标签、口播脚本、隐私区域、外观与语言偏好，以及可选的 AI 模型配置和 API Key。被录制的页面可能包含个人信息或敏感信息。</p></section>
+      <section><h2>2. 本地存储</h2><p>录制会话、截图、教程和视频保存在当前 Chrome Profile 的 IndexedDB 中。偏好设置和模型配置保存在 <code>chrome.storage.local</code> 中，短期录制恢复状态可能保存在 <code>chrome.storage.session</code> 中。StepMark 不会将这些本地数据上传到由 StepMark 运营的服务器。</p></section>
+      <section><h2>3. 可选的 AI 润色</h2><p>只有在你配置模型服务并主动执行 AI 润色后，该功能才会运行。请求会由扩展直接发送到你配置的 Endpoint，可能包含教程文字、当前标签页的网址和标题、结构化事件与页面上下文，以及视觉模型所需的选定截图。API Key 会发送给相应服务商用于身份验证，该服务商自身的条款与隐私政策适用于这些处理。</p></section>
+      <section><h2>4. 视频与口播</h2><p>StepMark 在安装时声明 Chrome 的标签页采集能力，但只有在你选择“图文 + 视频”并明确开始录制后才会采集视频。视频模式只录制当前浏览器标签页，不录制整个桌面，结果保存在本地。口播使用浏览器和操作系统提供的语音合成能力；StepMark 不会将口播脚本上传到由 StepMark 运营的语音服务。</p></section>
+      <section><h2>5. 信息用途</h2><p>这些信息仅用于录制你指定的操作流程、生成和编辑教程、应用隐私遮罩、试听可选口播、执行用户主动请求的 AI 润色，以及导出文件。</p></section>
+      <section><h2>6. 分享与出售</h2><p>StepMark 不出售个人信息，不将其用于广告或信用评估，也不会让开发者访问你的本地录制内容。只有在你主动使用已配置的 AI 服务商，或者下载、复制、上传或分享导出文件时，相关信息才会离开扩展。</p></section>
+      <section><h2>7. 保留与删除</h2><p>本地数据会一直保留，直到你在 StepMark 中删除会话、清除扩展数据、重置设置或卸载扩展。导出后的文件由你自行管理，需要在对应保存位置单独删除。</p></section>
+      <section><h2>8. 安全与隐私工具</h2><p>StepMark 不执行远程托管的代码。AI Endpoint 应使用 HTTPS。扩展提供自动和手动截图打码工具，但自动识别可能无法发现所有敏感信息。分享前请检查最终教程、截图、视频和导出文件。</p></section>
+      <section><h2>9. 官网访问分析</h2><p>StepMark 官网使用 Google Analytics 4 了解页面访问，以及 Chrome 商店链接点击、手动 ZIP 下载等交互。网站分析可能处理页面网址、来源页面、浏览器与设备信息、大致位置和交互事件。它只用于 <code>getstepmark.com</code>，不在 StepMark 扩展中运行。录制内容、截图、教程、视频、API Key 和扩展使用行为不会发送到 Google Analytics。本站已关闭 Google Signals 和广告个性化信号。Google 的<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">隐私政策</a>适用于其数据处理。</p></section>
+      <section><h2>10. Chrome Web Store 有限使用要求</h2><p>StepMark 对通过 Chrome API 获得的信息的使用遵守 Chrome Web Store 用户数据政策，包括有限使用要求。StepMark 只会将这些信息用于提供或改进面向用户的单一流程文档功能。</p></section>
+      <section><h2>11. 变更与联系方式</h2><p>本政策如有重大变更，会更新在本页面，并在需要时于扩展中说明。如有疑问，请联系 <a href="mailto:yhou.bella@gmail.com">yhou.bella@gmail.com</a>。</p></section>
+    </main>
+  </body>
+</html>
