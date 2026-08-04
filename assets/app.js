@@ -25,10 +25,24 @@ openLinkedDisclosure();
 document.querySelectorAll('[data-analytics-event]').forEach((link) => {
   link.addEventListener('click', () => {
     if (typeof window.gtag !== 'function') return;
-    window.gtag('event', link.dataset.analyticsEvent, {
+
+    const eventParameters = {
       link_url: link.href,
       link_text: link.textContent.trim(),
       link_location: link.dataset.analyticsLocation
-    });
+    };
+
+    if (link.dataset.analyticsEvent === 'stepmark_zip_download') {
+      const fileName = new URL(link.href).pathname.split('/').pop() || '';
+      Object.assign(eventParameters, {
+        download_version: link.dataset.analyticsVersion,
+        file_name: decodeURIComponent(fileName),
+        file_extension: 'zip',
+        site_language: document.documentElement.lang || 'en',
+        transport_type: 'beacon'
+      });
+    }
+
+    window.gtag('event', link.dataset.analyticsEvent, eventParameters);
   });
 });
